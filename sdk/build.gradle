@@ -141,12 +141,6 @@ android {
             manifest.srcFile 'java/AndroidManifest.xml'
         }
     }
-
-    externalNativeBuild {
-        cmake {
-            path (project.projectDir.toString() + '/libcxx_helper/CMakeLists.txt')
-        }
-    }
 }
 
 dependencies {
